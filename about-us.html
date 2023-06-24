@@ -9,24 +9,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
     <!--Navbar - start-->
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Ana Sayfa</a>
+        <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">
+                    <i class="fa fa-home"></i>
+                    Home
+                    <span class="sr-only">(current)</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="contact-us.html">İletişim</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">
+                    <i class="fa fa-envelope-o">
+                      <!-- <span class="badge badge-danger">11</span> -->
+                    </i>
+                    İletişim
+                  </a>
                 </li>
-                <li>   
-                    <a href="items.html">Mağazamız</a>  
-               </li>
-            </ul>
-        </nav>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="about-us.html">
+                    <i class="fa fa-envelope-o">
+                      <!-- <span class="badge badge-warning">11</span> -->
+                    </i>
+                    Hakkımızda
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="items.html">
+                    <i class="fa fa-envelope-o">
+                      <span class="badge badge-warning">9</span>
+                    </i>
+                    Ürünlemiz
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
     <!--Navbar - End-->
     

@@ -9,79 +9,145 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
-    <H1 style="text-transform: uppercase;">mağazamız</H1>
+    <body>
     <!------------------- navigasyon -->
-    <nav>
-        <p>
-            <a href="index.html">Anasayfa</a>
-        </p>
-        <p>
-            <a href="contact-us.html">İletişim</a>
-        </p>
-        <p>
-            <a href="about-us.html">Hakkımızda</a>
-        </p>
-        <p>
-            <a href="items.html">Mağazamız</a>
-        </p>  
-    </nav>
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                <i class="fa fa-home"></i>
+                Home
+                <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">
+                <i class="fa fa-envelope-o">
+                  <!-- <span class="badge badge-danger">11</span> -->
+                </i>
+                İletişim
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="about-us.html">
+                <i class="fa fa-envelope-o">
+                  <!-- <span class="badge badge-warning">11</span> -->
+                </i>
+                Hakkımızda
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="items.html">
+                <i class="fa fa-envelope-o">
+                  <span class="badge badge-warning">9</span>
+                </i>
+                Ürünlemiz
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <H1 style="text-transform: uppercase;">mağazamız</H1>
     <article>
-        <ul>
-            <h1>
-                T-shirts
-            </h1>
-            <li>
-                <img style="height: 400px;" src="images/beyaz t-shirt.jpg" alt="Beyaz"> <br>
-                Beyaz T-shirt
-            </li>
-            <li>
-                <img style="height: 400px;" src="images/siyah t-shirt.jpg" alt="Siyah"><br>
-                Siyah T-shirt
-            </li>
-            <li>
-                <img style="height: 400px;" src="images/7c442cbe-0070-42fa-b38c-c9d7785e7c08_size1410x2115.jpg" alt="Krem"><br>
-                Krem T-shirt
-            </li>
-        </ul>
-        <ul>
-            <h1>
-                Sweatshirts
-            </h1>
-            <li>
-                <img style="height: 400px;" src="images/gri sweat.jpg" alt="Gri"><br>
-                Gri Sweat
-            </li>
-            <li>
-                <img style="height: 400px;" src="images/mavi sweat.jpg" alt="Mavi"><br>
-                Mavi Sweat
-            </li>
-            <li>
-                <img style="height: 400px;" src="images/yeşil sweat.jpg" alt="Yeşil"><br>
-                Yeşil Sweat
-            </li>
-        </ul>
-        <ul>
-            <h1>
-                Pants
-            </h1>
-            <li>
-                <img style="height: 400px;" src="images/pants 1.jpg" alt="Bej"><br>
-                Bej Pants
-            </li>
-            <li>
-                <img style="height: 400px;" src="images/kahve pants.jpg" alt="Kahverengi"><br>
-                Kahverengi Pants
-            </li>
-            <li>
-                <img style="height: 400px;" src="images/yeşil sweat.jpg" alt="Yeşil"><br>
-                Yeşil Pants
-            </li>
-        </ul>
+        <div class="card-group">
+            <div class="card">
+              <img src="images/beyaz t-shirt.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Beyaz T-Shirt</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, est porro animi sequi recusandae dolorum dignissimos.</p>
+                <a href="#" class="button grey">BUY</a>
+                <p class="card-text"><small class="text-muted">in Stocks</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/siyah t-shirt.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Siyah T-Shirt</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum consectetur rem assumenda necessitatibus, dolores voluptas non impedit debitis ex quos?</p>
+                <a href="#" class="button grey">BUY</a>
+                <p class="card-text"><small class="text-muted">in Stocks</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/7c442cbe-0070-42fa-b38c-c9d7785e7c08_size1410x2115.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Couple Shirt</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsa alias aliquid debitis officiis placeat mollitia quam iure suscipit aliquam.</p>
+                <a href="#" class="button grey">BUY</a>
+                <p class="card-text"><small class="text-muted">New Arrivals</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="images/gri sweat.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gri Sweatshirt</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet illo enim quaerat nulla maxime dolor?</p>
+                <a href="#" class="button grey">BUY</a>
+                <p class="card-text"><small class="text-muted">Limited</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/mavi sweat.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mavi Sweatshirt</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus veritatis quidem velit cupiditate a!</p>
+                <a href="#" class="button grey">BUY</a>
+                <p class="card-text"><small class="text-muted">Last 2 in Stocks</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/yeşil sweat.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yeşil Sweatshirt</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, totam earum eos neque facere atque alias reiciendis quae sapiente voluptates.</p>
+                <a href="#" class="button grey">BUY</a>
+                <p class="card-text"><small class="text-muted">in Stocks</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+                <img src="images/pants 1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bej Pants</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit sequi iste ipsa nisi quibusdam.</p>
+                  <a href="#" class="button grey">BUY</a>
+                  <p class="card-text"><small class="text-muted">in Stocks</small></p>
+                </div>
+              </div>
+            <div class="card">
+              <img src="images/kahve pants.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kahverengi Pants</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni harum, quo voluptatum voluptate nobis.</p>
+                <a href="#" class="button grey">BUY</a>
+                <p class="card-text"><small class="text-muted">New Arrivals</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/yeşil pants.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yeşil Pants</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam veritatis doloremque suscipit, vitae nemo.</p>
+                <a href="#" class="button grey">BUY</a>
+                <p class="card-text"><small class="text-muted">on Sale</small></p>
+              </div>
+            </div>
+          </div>
+       
     </article>
-
-
-    
 </body>
 </html>

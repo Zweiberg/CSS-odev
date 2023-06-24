@@ -9,55 +9,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        
-    </style>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Simge Butik</h1>
     <!------------------- navigasyon -->
-    <nav>
-        <p>
-            <a href="contact-us.html">
-                <button class="button-85">
-                    İletişim
-                </button>
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" href="index.html">SİMGE BUTİK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              <i class="fa fa-home"></i>
+              Home
+              <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">
+              <i class="fa fa-envelope-o">
+                <!-- <span class="badge badge-danger">11</span> -->
+              </i>
+              İletişim
             </a>
-        </p>
-        <p>
-            <a href="about-us.html">
-                <button class="button-85">
-                    Hakkımızda
-                </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="about-us.html">
+              <i class="fa fa-envelope-o">
+                <!-- <span class="badge badge-warning">11</span> -->
+              </i>
+              Hakkımızda
             </a>
-        </p>
-        <p>
-            <a href="items.html">
-                <button class="button-85">
-                    Mağazamız
-                </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="items.html">
+              <i class="fa fa-envelope-o">
+                <span class="badge badge-warning">9</span>
+              </i>
+              Ürünlemiz
             </a>
-        </p>  
+          </li>
+        </ul>
+      </div>
     </nav>
     <!--------------------- article bir -->
     <section>
         <article>
             <h2>ANASAYFA</h2>
-            <p>
-                Abonelerimize özel %10 indirim<br>
-                Bültenimize abone ol %10 indirim, ayrıcalıklı kampanyalar ve çok sayıda iyi haber al!
-            </p>
-            <ul>
+                <ul>
                 <li>T-shirts</li>
-            </ul>
-            <ul>
+                </ul>
+                <ul>
                 <li>Sweatshirts</li>
-            </ul>
-            <ul>
+                </ul>
+                <ul>
                 <li>Pants</li>
-            </ul>
+                </ul>
             <p>Ürünlemizin fiyatlarına mağazamız kısmından ulaşabilirsiniz</p>
         </article>
+            <div style="height: 300px;" class="jumbotron">
+            <h1 class="display-5">Simge Butik</h1>
+            <p style="height: 50px;" class="lead"> Abonelerimize özel %10 indirim<br>
+                Bültenimize abone ol %10 indirim, ayrıcalıklı kampanyalar ve çok sayıda iyi haber al!</p>
+            <hr class="my-4">
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+          </div>
     </section>
     
 </body>
